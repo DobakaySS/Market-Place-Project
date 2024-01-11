@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 40px;
-    cursor:default;
+    cursor:pointer;
 }
 
 .main-header__title {    
