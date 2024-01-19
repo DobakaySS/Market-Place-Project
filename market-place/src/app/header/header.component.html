@@ -7,13 +7,13 @@
         <nav class="main-header__menu">
             <ul>
                 <li>
-                    <a>Produtos</a>
+                    <a routerLink="/produtos">Produtos</a>
                 </li>
-                <li><a><i class="fa-solid fa-cart-shopping"></i></a>
-                    <span class="badge-carrinho">0</span>
+                <li><a routerLink="/carrinho"><i class="fa-solid fa-cart-shopping" matBadge="{{carrinhoService.obtemCarrinho().length}}" matBadgeSize="small"></i></a>
+                    
                 </li>
                 <li>
-                    Contato
+                    <a routerLink="/contato">Contato</a>
                 </li>
                 <li>
                     <a ><i class="fa-brands fa-linkedin"></i></a>
