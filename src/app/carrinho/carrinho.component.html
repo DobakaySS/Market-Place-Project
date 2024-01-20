@@ -7,7 +7,7 @@
             <p>Preço: {{itemCarrinho.preco | currency:"BRL"}}</p>
             <label>
                 Quantidade:
-                <input type="number" [(ngModel)]="itemCarrinho.quantidade" (ngModelChange)="updateQuantidadeProduto(i,itemCarrinho)" >
+                <input  type="number" [(ngModel)]="itemCarrinho.quantidade" (ngModelChange)="updateQuantidadeProduto(i,itemCarrinho)" min="1">
             </label>
             <button class="remove-button" (click)="removerProdutoCarrinho(itemCarrinho.id)"><i
                     class="fa-solid fa-xmark"></i></button>
