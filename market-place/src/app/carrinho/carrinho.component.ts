@@ -38,6 +38,7 @@ export class CarrinhoComponent implements OnInit {
   updateQuantidadeProduto(index: number,itemCarrinho: IProdutoCarrinho){
     this.carrinhoService.itens[index].quantidade = itemCarrinho.quantidade;
     this.carrinhoService.salvarCarrinho();
+    this.calcularTotal();
   }
 
   comprar(){
